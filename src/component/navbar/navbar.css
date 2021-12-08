@@ -1,0 +1,93 @@
+nav {
+  height: 5rem;
+  width: 100%;
+  padding: 0 6rem 0 6rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.right-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+}
+.right-nav li {
+  list-style: none;
+  margin-left: 3rem;
+  position: relative;
+}
+.right-nav li:after {
+  position: absolute;
+  left: 1px;
+  content: "";
+  height: 18px;
+  width: 50px;
+  border-bottom: solid 3px #0052cc;
+  transition: left 250ms ease-in-out, right 250ms ease-in-out;
+  opacity: 0;
+}
+
+.right-nav li:hover:after {
+  opacity: 1;
+}
+.nav-list {
+  color: #0052cc;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+  width: 120%;
+  height: 4rem;
+}
+.left-nav li {
+  list-style: none;
+  margin-left: 3rem;
+}
+.nav-btn {
+  height: 40px;
+  width: 73px;
+  border-radius: 4px;
+  padding: 10px, 12px, 10px, 12px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.button1 {
+  background-color: #fff;
+  color: #000;
+}
+.button1:after {
+  position: absolute;
+  left: 12px;
+  content: "";
+  height: 15px;
+  width: 48px;
+  border-bottom: solid 3px #0052cc;
+  transition: left 250ms ease-in-out, right 250ms ease-in-out;
+  opacity: 0;
+}
+
+.button1:hover:after {
+  opacity: 1;
+}
+.button2 {
+  background-color: #0052cc;
+  color: #fff;
+}
+.button2:after {
+  position: absolute;
+  left: 15px;
+  content: "";
+  height: 15px;
+  width: 46px;
+  border-bottom: solid 3px #999;
+  transition: left 250ms ease-in-out, right 250ms ease-in-out;
+  opacity: 0;
+}
+
+.button2:hover:after {
+  opacity: 1;
+}
