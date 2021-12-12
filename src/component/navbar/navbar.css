@@ -6,6 +6,9 @@ nav {
   justify-content: space-between;
   cursor: pointer;
 }
+.asides {
+  display: none;
+}
 .right-nav {
   display: flex;
   align-items: center;
@@ -33,8 +36,9 @@ nav {
 }
 .nav-list {
   color: #0052cc;
-  font-size: 1.4rem;
+  font-size: 1.9rem;
   font-weight: 700;
+  text-decoration: none;
 }
 .nav-list:after {
   display: none;
@@ -94,4 +98,18 @@ nav {
 
 .button2:hover:after {
   opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .aside {
+    display: none;
+  }
+
+  .asides {
+    display: block;
+  }
+
+  nav {
+    border: 2px solid black;
+  }
 }
