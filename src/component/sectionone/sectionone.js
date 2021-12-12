@@ -94,7 +94,6 @@ function Sectionone() {
                   alt="search icon"
                 />
               </div>
-              {/* ***********line button********* */}
               <div className="line-btn">
                 <div>
                   <img
