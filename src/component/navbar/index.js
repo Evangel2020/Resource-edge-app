@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav>
       <aside>
         <ul className="right-nav">
-          <Link to="/">
+          <Link className="nav-list" to="/">
             <li className="nav-list">resource edge</li>
           </Link>
           {localStorage.getItem("email") ? (

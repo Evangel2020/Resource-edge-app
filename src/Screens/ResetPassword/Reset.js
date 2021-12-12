@@ -1,8 +1,8 @@
 import { React, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./Login.css";
+import "./Reset.css";
 
-const Login = () => {
+const Reset = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [show, setShow] = useState(true);
@@ -39,19 +39,13 @@ const Login = () => {
         </div>
         <div className="login-box">
           <div className="box-width">
-            <div>
-              <h3>Log in</h3>
-              <p>Access your resource edge account</p>
-            </div>
-
-            {!show && (
-              <div>
-                <p>{email}</p>
-              </div>
-            )}
-
             {show ? (
               <>
+                <div>
+                  <h3>Reset Password</h3>
+                  <p>To enable us reset your pass, enter your email below</p>
+                </div>
+
                 <label>
                   Email Address
                   <input
@@ -64,29 +58,31 @@ const Login = () => {
                 <div
                   className={email.includes(".com") ? "empty-box" : "empty-div"}
                 ></div>
+
+                <hr />
+
+                <a href="login" className="forgot-text">
+                  <p>Back to Login</p>
+                </a>
               </>
             ) : (
               <>
-                <label>
-                  Password{" "}
-                  <input
-                    type="password"
-                    placeholder="Enter password"
-                    value={password}
-                    onChange={(e) => passwordHandler(e)}
-                  />
-                </label>
-                <div
-                  className={password.length === 6 ? "empty-box" : "empty-div"}
-                ></div>{" "}
+                <div style={{ width: "100%" }}>
+                  <h3>Reset Password</h3>
+                </div>
+                <div className="resetimg">
+                  <img src={`${process.env.PUBLIC_URL}/images/image 38.jpg`} />
+                </div>
+                <div style={{ width: "100%" }}>
+                  <p>A recovery email has been sent to your email address</p>
+                </div>
+                <hr />
+
+                <a href="login" className="forgot-text">
+                  <p>Back to Login</p>
+                </a>
               </>
             )}
-
-            <hr />
-
-            <a href="reset" className="forgot-text">
-              <p>Forgot Password?</p>
-            </a>
           </div>
         </div>
       </div>
@@ -94,4 +90,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Reset;
