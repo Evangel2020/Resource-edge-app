@@ -7,14 +7,27 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [show, setShow] = useState(true);
 
+  const navigate = useNavigate();
+
   const emailHandler = (e) => {
     setEmail(e.target.value);
 
     setTimeout(function () {
       if (e.target.value.includes(".com")) {
         setShow(!show);
+        localStorage.setItem("email", e.target.value);
       }
-    }, 10000);
+    }, 6000);
+  };
+
+  const passwordHandler = (e) => {
+    setPassword(e.target.value);
+
+    setTimeout(function () {
+      if (e.target.value.length === 6) {
+        navigate("/dashboard");
+      }
+    }, 6000);
   };
 
   return (
@@ -60,7 +73,7 @@ const Login = () => {
                     type="password"
                     placeholder="Enter password"
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => passwordHandler(e)}
                   />
                 </label>
                 <div
