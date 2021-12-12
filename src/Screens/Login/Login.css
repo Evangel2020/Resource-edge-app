@@ -1,0 +1,119 @@
+.login-container {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  border: 1px darkblue solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container div {
+  width: 40%;
+  margin: auto;
+}
+
+.login-container div .login-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.login-container div .login-image h1 {
+  color: #0052cc;
+  margin-bottom: 7px;
+}
+
+.login-container div .login-image img {
+  color: #0052cc;
+  height: 30px;
+}
+
+.login-container div .login-box {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  width: 100%;
+  height: 480px;
+  padding-bottom: 35px;
+}
+
+.login-container div .login-box .box-width {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-container div .login-box .box-width h3 {
+  text-align: center;
+  font-size: 32px;
+}
+.login-container div .login-box .box-width p {
+  text-align: center;
+  font-size: 17px;
+  width: 100%;
+}
+
+.login-container div .login-box .box-width label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.login-container div .login-box .box-width label input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ddd;
+  padding-left: 6px;
+  outline: 1px solid #0052cc;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.login-container div .login-box .box-width .empty-div {
+  width: 100%;
+  height: 45px;
+  background-color: #ddd;
+  border-radius: 3px;
+  margin: 20px 0;
+}
+.login-container div .login-box .box-width .empty-box {
+  width: 100%;
+  height: 45px;
+  background-color: #0052cc;
+  border-radius: 3px;
+  margin: 20px 0;
+}
+
+.login-container div .login-box .box-width .forgot-text {
+  text-decoration: none;
+  color: #0052cc;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.login-container div .login-box .box-width .forgot-text p {
+  font-size: 20px;
+}
+
+@media (max-width: 1400px) {
+  .login-container div {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (max-width: 900px) {
+  .login-container div {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  .login-container div {
+    width: 90%;
+    margin: auto;
+  }
+}

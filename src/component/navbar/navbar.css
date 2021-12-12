@@ -1,7 +1,7 @@
 nav {
   height: 5rem;
   width: 100%;
-  padding: 0 6rem 0 6rem;
+  padding: 0rem 8rem;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -22,7 +22,7 @@ nav {
   left: 1px;
   content: "";
   height: 18px;
-  width: 50px;
+  width: 100%;
   border-bottom: solid 3px #0052cc;
   transition: left 250ms ease-in-out, right 250ms ease-in-out;
   opacity: 0;
@@ -35,6 +35,10 @@ nav {
   color: #0052cc;
   font-size: 1.4rem;
   font-weight: 700;
+}
+.nav-list:after {
+  display: none;
+  opacity: 0;
 }
 .left-nav {
   display: flex;
@@ -61,10 +65,10 @@ nav {
 }
 .button1:after {
   position: absolute;
-  left: 12px;
+  left: 10px;
   content: "";
   height: 15px;
-  width: 48px;
+  width: 75%;
   border-bottom: solid 3px #0052cc;
   transition: left 250ms ease-in-out, right 250ms ease-in-out;
   opacity: 0;
@@ -82,8 +86,8 @@ nav {
   left: 15px;
   content: "";
   height: 15px;
-  width: 46px;
-  border-bottom: solid 3px #999;
+  width: 60%;
+  border-bottom: solid 3px #ddd;
   transition: left 250ms ease-in-out, right 250ms ease-in-out;
   opacity: 0;
 }
