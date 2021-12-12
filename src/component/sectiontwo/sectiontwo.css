@@ -1,0 +1,147 @@
+.logistics-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 4rem;
+}
+.logic-text {
+  width: 40%;
+  text-align: start;
+  padding-top: 3rem;
+}
+.logic-text h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #091e42;
+  padding-bottom: 1rem;
+}
+.content {
+  width: 25%;
+  height: 260px;
+  text-align: start;
+  margin-left: 3rem;
+}
+.card-tracker h3 {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: #091e42;
+  text-transform: capitalize;
+}
+.card-tracker > p {
+  font-size: 0.8rem;
+  padding-top: 0.7rem;
+  color: #5e6c84;
+}
+.container_board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  background-color: #fafbfc;
+  margin: 4rem auto;
+  padding-bottom: 3rem;
+  box-shadow: -28px 46px 60px rgba(9, 30, 66, 0.08);
+}
+
+.table-dashboard {
+  background-color: #ffffff;
+  border: 0.66px solid #ddd;
+  margin-left: 3.5rem;
+}
+.button-container {
+  padding-top: 2rem;
+}
+.nav-head {
+  border-bottom: 0.66px solid #ddd;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding-left: 1.5rem;
+  color: #091e42;
+}
+.travel-dashboard {
+  display: flex;
+  padding-top: 3rem;
+  width: 90%;
+  justify-content: space-between;
+}
+.txt-board {
+  padding-left: 3.2rem;
+}
+.card-table {
+  background-color: #ffffff;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 7px;
+  border: 0.66px solid #ddd;
+}
+.travel-details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.66px solid #ddd;
+  width: 100%;
+}
+.view1 {
+  padding: 1rem 5rem 2rem 1rem;
+}
+.view2 {
+  padding: 1rem 1rem 3rem 1rem;
+}
+.details-card {
+  text-align: start;
+}
+.vector-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vector-image img {
+  margin-left: 1rem;
+}
+/* ********payroll dashboard***** */
+.payroll-dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  background-color: #fafbfc;
+  margin: 4rem auto;
+  padding-bottom: 3rem;
+  box-shadow: -28px 46px 60px rgba(9, 30, 66, 0.08);
+}
+.card-input {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: #ffffff;
+  margin: auto;
+}
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.66px solid #ddd;
+}
+.input-valuename {
+  display: flex;
+  align-items: center;
+  text-align: start;
+}
+.input-valuename img {
+  width: 50%;
+}
+
+/* *******logo section**** */
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

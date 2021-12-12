@@ -1,0 +1,24 @@
+section {
+  padding: 0rem 2rem 0rem 10rem;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text {
+  width: 55%;
+  text-align: start;
+}
+.hero-text h2 {
+  font-size: 3rem;
+  color: #091e42;
+}
+.hero-text > p {
+  margin-top: 1.5rem;
+  color: #344563;
+}
+.hero-image img {
+  width: 100%;
+}
