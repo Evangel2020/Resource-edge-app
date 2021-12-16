@@ -1,7 +1,15 @@
+.container3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .logistics-card {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-around !important;
+  width: 85%;
+  flex-flow: row;
   padding-top: 4rem;
 }
 .logic-text {
@@ -15,8 +23,12 @@
   color: #091e42;
   padding-bottom: 1rem;
 }
+.content-wrapper {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
 .content {
-  width: 25%;
   height: 260px;
   text-align: start;
   margin-left: 3rem;
@@ -34,114 +46,83 @@
 }
 .container_board {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  height: 100%;
-  background-color: #fafbfc;
-  margin: 4rem auto;
-  padding-bottom: 3rem;
-  box-shadow: -28px 46px 60px rgba(9, 30, 66, 0.08);
-}
-
-.table-dashboard {
-  background-color: #ffffff;
-  border: 0.66px solid #ddd;
-  margin-left: 3.5rem;
-}
-.button-container {
-  padding-top: 2rem;
-}
-.nav-head {
-  border-bottom: 0.66px solid #ddd;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  text-align: start;
-  padding-left: 1.5rem;
-  color: #091e42;
-}
-.travel-dashboard {
-  display: flex;
-  padding-top: 3rem;
-  width: 90%;
-  justify-content: space-between;
-}
-.txt-board {
-  padding-left: 3.2rem;
-}
-.card-table {
-  background-color: #ffffff;
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  padding: 1rem;
-  border-radius: 7px;
-  border: 0.66px solid #ddd;
-}
-.travel-details {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 0.66px solid #ddd;
-  width: 100%;
-}
-.view1 {
-  padding: 1rem 5rem 2rem 1rem;
-}
-.view2 {
-  padding: 1rem 1rem 3rem 1rem;
-}
-.details-card {
-  text-align: start;
-}
-.vector-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.vector-image img {
-  margin-left: 1rem;
-}
-/* ********payroll dashboard***** */
-.payroll-dashboard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  height: 100%;
-  background-color: #fafbfc;
-  margin: 4rem auto;
-  padding-bottom: 3rem;
-  box-shadow: -28px 46px 60px rgba(9, 30, 66, 0.08);
-}
-.card-input {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  background-color: #ffffff;
+  width: 70%;
   margin: auto;
 }
-.input {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0.66px solid #ddd;
-}
-.input-valuename {
-  display: flex;
-  align-items: center;
-  text-align: start;
-}
-.input-valuename img {
-  width: 50%;
+.container_board > div > img {
+  height: 70vh;
+  /* box-shadow: -28px 46px 60px rgba(9, 30, 66, 0.08); */
 }
 
 /* *******logo section**** */
 .logo-section {
+  width: 85%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 4rem;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 1000px) {
+  .container_board {
+    width: 100%;
+  }
+  .container_board > div {
+    width: 80%;
+    margin: auto;
+  }
+  .container_board > div > img {
+    width: 100%;
+  }
+  .logo-section {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-tracker > p {
+    font-size: 1.2rem;
+  }
+  .card-text3 > p {
+    font-size: 1.2rem;
+  }
+  .first-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .first-logo > div > img {
+    width: 100%;
+    padding: 0rem 2rem;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .logistics-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .logic-text {
+    width: 80%;
+  }
+  .content-wrapper {
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+  }
+  .content-wrapper > .content {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-section .first-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+  }
 }
