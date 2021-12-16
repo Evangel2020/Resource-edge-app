@@ -3,7 +3,7 @@ import "./heropage.css";
 
 const Heropage = () => {
   return (
-    <section>
+    <section className="hero">
       <div className="container">
         <div className="hero-text">
           <h2>Throw paperwork into the trash where it belong</h2>
@@ -13,10 +13,7 @@ const Heropage = () => {
           </p>
         </div>
         <div className="hero-image">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/image 1.jpg`}
-            alt="avatar"
-          />
+          <img src={`images/image 1.jpg`} alt="avatar" />
         </div>
       </div>
     </section>

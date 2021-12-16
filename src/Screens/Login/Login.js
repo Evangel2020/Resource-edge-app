@@ -34,7 +34,7 @@ const Login = () => {
     <div className="login-container">
       <div>
         <div className="login-image">
-          <img src={`${process.env.PUBLIC_URL}/images/image 12.jpg`} />
+          <img src={`images/image 12.jpg`} />
           <h1>resource edge</h1>
         </div>
         <div className="login-box">
